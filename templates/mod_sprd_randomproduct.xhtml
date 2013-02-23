@@ -1,0 +1,12 @@
+<div class="<?php echo $this->class; ?> block"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?>>
+<?php if ($this->headline): ?>
+<<?php echo $this->hl; ?>><?php echo $this->headline; ?></<?php echo $this->hl; ?>>
+<?php endif; ?>
+
+<p class="price"><?php echo $this->articlePrice; ?> <?php echo $this->shopCurrency; ?></p>
+
+<img src="<?php echo $this->articleImage; ?>" alt="<?php if(!empty($this->articleName)) : echo $this->articleName; else: echo $this->shopName; endif; ?>" title="<?php if(!empty($this->articleName)) : echo $this->articleName; else: echo $this->shopName; endif; ?>" <?php if(!empty($this->imgSize)) : echo $this->imgSize; endif; ?> />
+
+<a href="<?php echo $this->shopUrl; ?>" title="<?php echo $this->shopLink; ?>" rel="nofollow"><?php echo $this->shopLink; ?></a>
+
+</div>
